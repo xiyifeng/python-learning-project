@@ -1,52 +1,52 @@
-# Python Learning Project
+# Python 学习项目
 
-A comprehensive project designed to demonstrate fundamental Python concepts including variables, control flow, functions, and object-oriented programming.
+一个综合性项目，用于演示基本的 Python 概念，包括变量、控制流、函数和面向对象编程。
 
-## Project Structure
+## 项目结构
 
 ```
 python-learning-project/
-├── main.py             # Entry point demonstrating basic program structure
-├── __init__.py         # Package initialization file
-├── modules/            # Organized modules for different Python concepts
-│   ├── variables.py
-│   ├── control_flow.py
-│   ├── functions.py
-│   └── classes.py
-└── tests/              # Unit tests for all functionality
+├── main.py             # 程序入口文件
+├── __init__.py         # 包初始化文件
+├── modules/            # 按不同 Python 概念组织的模块
+│   ├── variables.py    # 变量模块
+│   ├── control_flow.py # 控制流模块
+│   ├── functions.py    # 函数模块
+│   └── classes.py      # 类模块
+└── tests/              # 所有功能的单元测试
     ├── test_variables.py
     ├── test_control_flow.py
     ├── test_functions.py
     └── test_classes.py
 ```
 
-## Installation
+## 安装步骤
 
-1. Clone or download the project directory
-2. Ensure Python 3.x is installed on your system
-3. (Optional) Create a virtual environment:
+1. 克隆或下载项目目录
+2. 确保系统已安装 Python 3.x
+3. (可选) 创建虚拟环境：
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate  # Windows 系统使用: venv\Scripts\activate
    ```
 
-## Usage
+## 使用方法
 
-To run the main demonstration:
+运行主程序：
 ```bash
 cd python-learning-project
 python main.py
 ```
 
-## Running Tests
+## 执行测试
 
-To execute all unit tests:
+运行全部单元测试：
 ```bash
 cd python-learning-project
 python -m unittest discover
 ```
 
-Or run specific tests:
+运行特定测试：
 ```bash
 python -m unittest tests.test_variables
 python -m unittest tests.test_control_flow
@@ -54,28 +54,28 @@ python -m unittest tests.test_functions
 python -m unittest tests.test_classes
 ```
 
-## Modules Overview
+## 模块说明
 
-### 1. Variables Module (`modules/variables.py`)
-Demonstrates Python variables and data types including:
-- Integers, floats, strings, and booleans
-- Lists, dictionaries, tuples, and sets
+### 1. 变量模块 (`modules/variables.py`)
+演示 Python 变量和数据类型：
+- 整数、浮点数、字符串和布尔值
+- 列表、字典、元组和集合
 
-### 2. Control Flow Module (`modules/control_flow.py`)
-Demonstrates Python control flow statements:
-- If/elif/else statements
-- For and while loops
-- Error handling with try/except
+### 2. 控制流模块 (`modules/control_flow.py`)
+演示 Python 控制流语句：
+- If/elif/else 语句
+- For 和 while 循环
+- Try/except 异常处理
 
-### 3. Functions Module (`modules/functions.py`)
-Demonstrates Python function definitions and usage:
-- Basic function creation
-- Default parameters
-- Variable number of arguments
-- Lambda functions
+### 3. 函数模块 (`modules/functions.py`)
+演示 Python 函数定义和使用：
+- 基本函数创建
+- 默认参数
+- 可变参数数量
+- Lambda 函数
 
-### 4. Classes Module (`modules/classes.py`)
-Demonstrates Python object-oriented programming concepts:
-- Class definition and instantiation
-- Inheritance
-- Method overriding
+### 4. 类模块 (`modules/classes.py`)
+演示 Python 面向对象编程概念：
+- 类定义和实例化
+- 继承
+- 方法重写
