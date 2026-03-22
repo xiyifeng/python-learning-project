@@ -12,12 +12,14 @@ python-learning-project/
 │   ├── variables.py    # 变量模块
 │   ├── control_flow.py # 控制流模块
 │   ├── functions.py    # 函数模块
-│   └── classes.py      # 类模块
+│   ├── classes.py      # 类模块
+│   └── sorting.py      # 排序算法模块
 └── tests/              # 所有功能的单元测试
     ├── test_variables.py
     ├── test_control_flow.py
     ├── test_functions.py
-    └── test_classes.py
+    ├── test_classes.py
+    └── test_sorting.py
 ```
 
 ## 安装步骤
@@ -52,6 +54,7 @@ python -m unittest tests.test_variables
 python -m unittest tests.test_control_flow
 python -m unittest tests.test_functions
 python -m unittest tests.test_classes
+python -m unittest tests.test_sorting
 ```
 
 ## 模块说明
@@ -79,3 +82,7 @@ python -m unittest tests.test_classes
 - 类定义和实例化
 - 继承
 - 方法重写
+
+### 5. 排序模块 (`modules/sorting.py`)
+演示经典排序算法：
+- 冒泡排序实现
