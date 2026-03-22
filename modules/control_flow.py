@@ -8,33 +8,39 @@ def demonstrate_control_flow():
     """Demonstrate if statements, loops, and error handling."""
     print("=== Control Flow ===")
     
-    # If statements
+    # If语句示例
     temperature = 25
-    print(f"Temperature: {temperature}")
+    print(f"温度值: {temperature}")
+    # 条件判断示例
     if temperature > 30:
-        print("It's hot outside!")
+        print("天气很热！")
     elif temperature > 20:
-        print("It's warm outside!")
+        print("天气温暖！")
     else:
-        print("It's cool outside!")
+        print("天气凉爽！")
     
-    # For loop
-    print("\nCounting from 1 to 5:")
+    # For循环示例
+    print("\n从1计数到5:")
     for i in range(1, 6):
-        print(f"Number {i}")
+        # 打印当前数字
+        print(f"数字 {i}")
     
-    # While loop
-    print("\nCounting down from 5 to 1:")
+    # While循环示例
+    print("\n从5倒数到1:")
     count = 5
     while count > 0:
-        print(f"Count: {count}")
+        # 打印当前倒数
+        print(f"倒数: {count}")
         count -= 1
     
-    # Error handling
-    print("\nDemonstrating error handling:")
+    # 错误处理示例
+    print("\n演示错误处理:")
     try:
+        # 故意引发除零错误
         result = 10 / 0
     except ZeroDivisionError:
-        print("Cannot divide by zero!")
+        # 捕获除零错误
+        print("不能除以零！")
     finally:
-        print("Execution completed.")
+        # 最终执行的代码
+        print("执行完成。")

@@ -10,13 +10,34 @@ def demonstrate_classes():
     
     # Basic class definition
     class Dog:
-        """A simple Dog class."""
+        """
+        一个简单的狗类
+        
+        属性:
+            name (str): 狗的名字
+            age (int): 狗的年龄（岁）
+            
+        方法:
+            bark: 让狗叫
+        """
         def __init__(self, name, age):
+            """
+            初始化新的狗实例
+            
+            参数:
+                name (str): 狗的名字
+                age (int): 狗的年龄（岁）
+            """
             self.name = name
             self.age = age
             
         def bark(self):
-            """Make the dog bark."""
+            """
+            让狗叫
+            
+            返回:
+                str: 表示狗叫声的字符串
+            """
             return f"{self.name} says Woof!"
     
     # Create instance and demonstrate methods
@@ -26,9 +47,19 @@ def demonstrate_classes():
     
     # Inheritance
     class GoldenRetriever(Dog):
-        """A GoldenRetriever subclass of Dog."""
+        """
+        金毛寻回犬类，继承自Dog类
+        
+        继承Dog类的所有功能，并添加了
+        金毛特有的方法
+        """
         def fetch(self):
-            """Specialized method for Golden Retrievers."""
+            """
+            金毛特有的取物方法
+            
+            返回:
+                str: 表示金毛取物动作的字符串
+            """
             return f"{self.name} fetched the ball!"
     
     # Create subclass instance
@@ -38,9 +69,18 @@ def demonstrate_classes():
     
     # Method overriding
     class LoudDog(Dog):
-        """A Dog subclass with louder bark."""
+        """
+        大声狗类，继承自Dog类
+        
+        重写了bark方法以产生更大的声音
+        """
         def bark(self):
-            """Override parent's bark method."""
+            """
+            重写父类的bark方法
+            
+            返回:
+                str: 表示大声狗叫声的字符串
+            """
             return f"{self.name} shouts WOOF!"
     
     # Create overridden class instance
